@@ -17,6 +17,22 @@ a {
 	text-decoration: none;
 }
 
+.btn {
+	font: inherit;
+	text-align: center;
+	color: #000000;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	border: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: #663d15;
+}
+
 .main-navigation {
 	font-size: 16px;
 	line-height: 20px;
@@ -40,4 +56,99 @@ a {
 .user-block a:hover,
 .user-block a:focus {
 	background-color: #242424;
+}
+
+.features-item {
+	text-align: center;
+}
+
+.features-item b {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-content-title h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.news-preview {
+	list-style: none;
+}
+
+.news-preview li {
+	text-align: left;
+}
+
+.index-bg {
+	color: #242424;
+	background-color: white;
+	background-image: url("../img/patern-light.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+	padding-bottom: 10px;
+}
+
+.news-preview time {
+	text-transform: none;
+}
+
+.galary img {
+	background-color: #825050;
+	border: 1px solid #ffffff;
+}
+
+.index-content-right a {
+	color: #000000;
+}
+
+.booking input {
+	font: inherit;
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.booking input:focus {
+	border: 2px solid #663d15;
+}
+
+.booking label {
+	font: inherit;
+}
+
+.main-footer {
+	color: #ffffff;
+	background-color: #252525;
+	background-image: url("../img/patern-dark.jpg");
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+
+.footer-contacts p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-contacts a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+	text-decoration: none;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-developers {
+	text-align: center;
+}
+
+.footer-developers a:hover,
+.footer-developers a:focus {
+	color: #ffffff;
+	background-color: #663d15;
 }
