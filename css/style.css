@@ -33,11 +33,22 @@ a {
 	background-color: #663d15;
 }
 
+.main-header .container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-nav-wrapper {
+	width: 100%;
+	background-color: black;
+}
+
 .main-navigation {
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
-	background-color: #000000;
+
 }
 
 .site-navigation,
