@@ -149,8 +149,28 @@ main.container {
 }
 
 .features-item b {
+	position: relative;
+	display: block;
 	font-size: 30px;
 	line-height: 42px;
+	margin-bottom: 66px;
+}
+
+.features-item b::after {
+	position: absolute;
+	top: 53px;
+	left: 50%;
+	margin-left: -10px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #f7f4f1;
+	transform: rotate(45deg);
+}
+
+.features-item p {
+	margin: 0;
+	padding: 0 10px;
 }
 
 .index-content-title h2 {
