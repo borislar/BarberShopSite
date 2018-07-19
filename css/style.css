@@ -14,18 +14,34 @@ body {
 	background-repeat: no-repeat;
 }
 
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap; /* 1 */
+}
+
 a {
 	text-decoration: none;
 }
 
 .btn {
+	display: inline-block;
+	padding: 10px 35px;
+	margin-right: 16px;
 	font: inherit;
 	text-align: center;
 	white-space: nowrap;
-	color: #000000;
+	color: rgb(255, 255, 255);
 	vertical-align: middle;
 	text-transform: uppercase;
-	background-color: #ffffff;
+	background-color: #000000;
 	border: none;
 }
 
@@ -34,6 +50,15 @@ a {
 .btn:active {
 	background-color: #663d15;
 }
+
+.btn.disabled,
+.btn:disabled {
+	cursor: default;
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+
 
 .main-header {
 	background-color: black;
@@ -160,8 +185,8 @@ main.container {
 	position: absolute;
 	top: 53px;
 	left: 50%;
-	margin-left: -10px;
 	content: "";
+	margin-left: -10px;
 	width: 20px;
 	height: 20px;
 	background-color: #f7f4f1;
@@ -202,9 +227,9 @@ main.container {
 	justify-content: space-between;
 	color: #242424;
 	background-color: white;
-	background-image: url("../img/patern-light.jpg");
-	background-position: 0 0;
-	background-repeat: repeat;
+	background-image: url("../img/Line.png"),url("../img/patern-light.jpg");
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;
 	padding-bottom: 10px;
 }
 
@@ -223,9 +248,34 @@ div.index-content.second {
 	padding: 50px 80px;
 }
 
+.second .index-content-right {
+	padding: 50px 0 50px 80px;
+}
+
 .index-content-left {
 	flex-basis: 300px;
 	padding: 50px 80px;
+}
+
+.index-content h2,
+.index-content p {
+	margin: 0;
+}
+
+.index-content h2 {
+	margin-bottom: 25px;
+}
+
+ .index-content-title ~ p.contacts {
+	margin-bottom: 25px;
+}
+
+.news-preview li:first-child {
+	margin-bottom: 25px;
+}
+
+.news-preview li:last-child {
+	margin-bottom: 35px;
 }
 
 .news-preview time {
@@ -234,14 +284,31 @@ div.index-content.second {
 
 .galary img {
 	background-color: #825050;
-	border: 1px solid #ffffff;
+	border: 6px solid #ffffff;
+	margin-bottom: 40px;
 }
 
-.index-content-right a {
-	color: #000000;
+.button-container-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+button.btn.galary-next,
+button.btn.galary-prev {
+	margin: 0;
+	flex-basis: 140px;
+}
+
+.index-content-left form.booking  {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .booking input {
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font: inherit;
 	background-color: transparent;
 	border: 2px solid #000000;
@@ -253,7 +320,31 @@ div.index-content.second {
 
 .booking label {
 	font: inherit;
+	display: block;
+	width: 140px;
+
 }
+
+.booking label:nth-child(2n+1){
+	padding-right: 20px;
+}
+
+.booking label:last-of-type {
+	margin-bottom: 20px;
+}
+
+.booking span {
+	display: block;
+	padding-left: 18px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+
+.booking button {
+	width: 100%;
+	margin: 0;
+}
+
 
 .main-footer {
 	color: #ffffff;
@@ -283,6 +374,7 @@ div.index-content.second {
 }
 
 .footer-social {
+	position: relative;
 	flex-basis: 150px;
 	margin-left: 60px;
 }
@@ -309,9 +401,20 @@ div.index-content.second {
 .footer-social {
 	text-align: center;
 }
+.footer-social p {
+	margin-bottom: 20px;
+}
 
 .footer-developers {
 	text-align: center;
+}
+
+.footer-developers p {
+	margin-bottom: 20px;
+}
+
+.footer-developers a.btn {
+	margin-right: 0;
 }
 
 .footer-developers a:hover,
@@ -319,3 +422,46 @@ div.index-content.second {
 	color: #ffffff;
 	background-color: #663d15;
 }
+.footer-social a::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	background-color: #000000;
+}
+
+a.social-btn:hover::before {
+		background-color: #ffffff;
+}
+
+a.btn-vk::before {
+	background-image: url("../img/vk.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+a.btn-fb::before {
+	left: 49px;
+	background-image: url("../img/facebook.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+a.btn-inst::before {
+	left: 98px;
+	background-image: url("../img/instagram.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+a.btn-vk:hover::before {
+	background-image: url("../img/vkreverce.png");
+}
+a.btn-fb:hover::before {
+	background-image: url("../img/facebookreverce.png");
+}
+a.btn-inst:hover::before {
+	background-image: url("../img/instagramreverce.png");
+}
+
