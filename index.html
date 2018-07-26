@@ -1,11 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Barbershop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="main-header">
+		<div class="container">
+			<div class="main-nav-wrapper">
+				<nav class="main-navigation">
+					<ul class="site-navigation">
+						<li>
+							<a href="#">Информация</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Прайс-лист</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-block">
+				<a href="#" class="login">
+					вход
+				</a>
+			</div>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<div class="index-logo">
+			<img src="img/index-logo.png" alt="Barbershop-logo" width="371" height="155">
+		</div>
+		<section class="features">
+			<div class="features-item">
+				<b class="features-name">Быстро</b>
+				<p>мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Круто</b>
+				<p>забудьте, как вы стриглись раньше.
+					мы сделаем из вас звезду футбола или кино!
+					во всяком случае внешне.</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Дорого</b>
+				<p>наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?</p>
+			</div>
+		</section>
+		<!--<div class="index-bg">-->
+			<div class="index-content first">
+			<div class="index-content-right">
+				<h2 class="index-content-title">Новости</h2>
+				<ul class="news-preview">
+					<li>
+						<p>нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+						<time datetime="2018-04-16">16 апреля</time>
+					</li>
+					<li>
+						<p>в нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datetime="2018-04-15">15 апреля</time>
+					</li>
+				</ul>
+				<a href="#" class="btn">Все новости</a>
+			</div>
+			<div class="index-content-left">
+				<h2>Фотогалерея</h2>
+				<div class="galary">
+					<a href="#"><img src="img/shop-inside.jpg" alt="Barber-room" height="164" width="286"></a>
+					<div class="button-container-flex">
+						<button class="btn galary-prev">назад</button>
+						<button class="btn galary-next">вперед</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="index-content second">
+				<div class="index-content-right">
+					<h2 class="index-content-title">Контактная информация</h2>
+					<p class="contacts">барбершоп «бородинский» <br>
+						адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+						телефон: +7 (495) 666-02-66
+					</p>
+					<p class="contacts">время работы: <br>
+						пн—пт: с 10:00 до 22:00 <br>
+						сб—вс: с 10:00 до 19:00</p>
+
+					<a href="" class="btn">Как проехать</a>
+					<a href="" class="btn">Обратная связь</a>
+				</div>
+				<div class="index-content-left">
+					<h2 class="index-content-title">Записаться</h2>
+					<p>укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+					<form class="booking" action="https://echo.htmlacademy.ru" method="post">
+						<label for="mame1">
+							<span>дата</span> <input id="mame1" type="text" value="" name="date"	placeholder="дата">
+						</label>
+						<label for="time1">
+							<span>время</span> <input id="time1" type="text" value="" name="time"	placeholder="время">
+						</label>
+						<label for="mame2">
+							<span>ваше имя</span> <input id="mame2" type="text" value="" name="name"	placeholder="имя">
+						</label>
+						<label for="phone1">
+							<span>телефон</span> <input id="phone1" type="text" value="" name="phone"	placeholder="телефон">
+						</label>
+						<button class="btn"	type="submit">Отправить</button>
+					</form>
+				</div>
+		</div>
+		<!--</div>-->
+	</main>
+	<footer class="main-footer">
+		<div class="container footer-flex">
+			<div class="footer-contacts">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адрес: Улица Пушкина, дом Колотушкина</p>
+				<a href="#">Как нас найти?</a>
+				<p>Телефон: 5-35-11</p>
+			</div>
+			<div class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn btn-vk"><span class="visuallyhidden">Вконтакте</span></a>
+				<a href="#" class="social-btn btn-fb"><span class="visuallyhidden">Фейсбук</span></a>
+				<a href="#" class="social-btn btn-inst"><span class="visuallyhidden">Инстограм</span></a>
+			</div>
+			<div class="footer-developers">
+				<p>Разработано</p>
+				<a class="btn" href="#">htmlacademy.ru</a>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal modal-login visuallyhidden">
+		<h2 class="visuallyhidden">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<!--Здесь будет форма-->
+		<span class="modal">&#215;</span>
+	</section>
+
+	<section class="modal modal-map visuallyhidden">
+		<h2 class="visuallyhidden">Как до нас добраться</h2>
+		<span class="modal-close">&#215;</span>
+	</section>
 
 </body>
 </html>
